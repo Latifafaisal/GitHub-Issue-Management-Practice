@@ -1,4 +1,6 @@
-public class BuggyCodeExample {
+package solution;
+
+public class SolutionBuggyCodeExample {
 
     // 1. Method to find the maximum number in an array
     public static int findMax(int[] numbers) {
@@ -13,7 +15,7 @@ public class BuggyCodeExample {
 
     // 2. Method to print the elements of an array
     public static void printArray(int[] arr) {
-        for (int i = 0; i <= arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
     }
@@ -24,7 +26,7 @@ public class BuggyCodeExample {
         for (int i = 0; i < numbers.length; i++) {
             sum += numbers[i];
         }
-        return sum / numbers.length;
+        return (double) sum / numbers.length;
     }
 
     // 4. Main method to test the above methods
